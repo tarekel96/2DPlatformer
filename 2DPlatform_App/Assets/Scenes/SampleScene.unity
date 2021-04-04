@@ -392,6 +392,9 @@ MonoBehaviour:
   controller: {fileID: 545771877}
   animator: {fileID: 545771878}
   runSpeed: 25
+  hasJumpPotion: 0
+  hasSpeedPotion: 0
+  potionModAmount: 0
 --- !u!114 &545771877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,6 +434,7 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+  m_JumpForceMod: 0
 --- !u!95 &545771878
 Animator:
   serializedVersion: 3
@@ -2406,3 +2410,72 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &2090587214171923409
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170069, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090587215289170159, guid: a06b2f4104fe74f4e826170ae93578b9,
+        type: 3}
+      propertyPath: m_Name
+      value: Potion - Jump
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a06b2f4104fe74f4e826170ae93578b9, type: 3}
