@@ -249,6 +249,7 @@ GameObject:
   - component: {fileID: 545771871}
   - component: {fileID: 545771877}
   - component: {fileID: 545771876}
+  - component: {fileID: 545771878}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -429,6 +430,25 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &545771878
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545771870}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 502866c804cdb41b4b780116919b963c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &872997622
 GameObject:
   m_ObjectHideFlags: 0
