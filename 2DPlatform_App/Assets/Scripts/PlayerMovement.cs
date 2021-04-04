@@ -8,16 +8,37 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 25f;
 
     private float horizontalMove = 0f;
-    
+    private bool jumpFlag = false;
+    private bool jump = false;
 
     // Update is called once per frame
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+        if (jumpFlag)
+        {
+            jumpFlag = false;
+        }
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            jump = true;
+        }
+    }
+
+    public void OnLanding()
+    {
+        jump = false;
     }
 
     void FixedUpdate()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, false, false);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+
+        if (jump)
+        {
+            jumpFlag = true;
+        }
     }
 }
